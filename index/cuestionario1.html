@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fondocuest1">
     <header class="cabecera">
-        <h1>PREGUNTAS DE BMO</h1>
+        <h1 class="fuente"><img src="../imagenes/pp,840x830-pad,1000x1000,f8f8f8.png" class="logo">WE GO JIM</h1>
     </header>
     <nav class="navegacion">
-        <p class="efectosnavcuest"><a href="../index/preguntas.html">CUESTIONARIO DE BMO</a></p>
-        <P class="efectosnavinicio"><a href="../index.html">INICIO</a></P>
+        <P class="efectosnav"><a href="../index.html" class="textnav">INICIO</a></P>
     </nav>
-    <div class="posicion">
-    <form class="posicion">
-        <p>Nombre: <input type="text" name="nombre" size="40"></p>
-        <p>Numero de telefono: <input type="text" name="telf" size="9"></p>
-        <p>Correo electrónico: <input type="text" name="telf" size="9"></p>
-        <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Borrar">
-        </p>
-      </form>
-    </div>
+    <form action="#" method="POST">
+        <div id="login-box">
+            <h1>Login</h1>
+
+            <div class="form">
+                <div class="item">
+                    <input type="text" placeholder="username" name="username">
+                </div>
+                <div class="item">
+                    <input type="text" placeholder="mail" name="mail">
+                </div>
+                <div class="item">
+                    <input type="password" placeholder="password" name="password">
+
+                </div>
+            
+            <button type="submit">Login</button>
+        </div>
+    </form>
 </body>
 </html>
