@@ -34,9 +34,11 @@
     border: 1px black;
     padding: 10px; 
     background-color: #14aec9;
-    border-radius: 40px;
     box-shadow: 4px 4px rgba(12, 132, 197, 0.7);
-    
+    text-decoration: none;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
 }
 .efectosnav:hover{
     background-color: rgb(0, 225, 255);
@@ -46,6 +48,32 @@
     color: white;
     font-family: 'Anton', sans-serif;
 }
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgb(0, 225, 255);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    background-color: #3d3d3dc5;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
 body{
     background-color:#ccf0f4;
     
@@ -101,7 +129,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     font-family: 'Signika Negative', sans-serif;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
 }
 .formularios{
     display: flex;
@@ -138,6 +166,7 @@ body{
     
     width: 25vh;
 }
+
 #login-box {
     border: 1px solid blue;
     width: 30%;
@@ -167,6 +196,36 @@ body{
     border-radius: 25px;
     background-image: linear-gradient(to right, #00dbde 0%, #004cff 100%);
 }
+#login-box-cues2 {
+    border: 1px solid blue;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: #00000080;
+    padding: 20px 50px;
+}
+#login-box-cues2 h1 {
+    color: white;
+}
+
+#login-box-cues2 .form .item input {
+   
+    padding: 5px 10px;
+}
+
+#login-box-cues2 button {
+    border: 0; 
+    width: 150px;
+    height: 30px;
+    margin-top: 18px;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #00dbde 0%, #004cff 100%);
+}
+
 .fondocuest1 {
     background: url("../imagenes/fondocuest1.jpg") center;
     background-size: 100% auto;
@@ -190,6 +249,21 @@ body{
     padding: 35px;
 }
 
+@media (max-width: 1300px){
+    .fondocuest1{
+        background: none;
+        background-color:#3d3d3d;
+    }
+    .fondocuest2{
+        background: none;
+        background-color:#3d3d3d;
+    }
+    .fondocuest3{
+        background: none;
+        background-color:#3d3d3d;
+    }
+}
+
 .titulos{
     padding: 25px;
     text-align: center;
@@ -205,7 +279,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     font-family: 'Signika Negative', sans-serif;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin-left: 15%;
     margin-right: 15%;
@@ -223,9 +297,29 @@ th {
     border-collapse: collapse;
     border-style:outset;
 }
+.posicionTablas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 700px) {
     .table thead {
       display: none;
+    }
+    .posicionTablas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+        
+    }
+    .posiciontablasalimentacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        margin-left: 20%;
+        
     }
     .formularios{
         display: flex;
